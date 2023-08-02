@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite Login CRM" verbose="1">
+    <test name="Login Test CRM 1">
+        <classes>
+            <class name="com.anhtester.Bai9_TestNGFramework.LoginTest">
+                <methods>
+                    <include name="testAnhTesterBlog1" />
+                </methods>
+            </class>
+            <class name="com.anhtester.PackageDemo.LoginTest3">
+                <methods>
+                    <include name="testAnhTesterBlog4" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Login Test CRM 2">
+        <packages>
+            <package name="com.anhtester.Bai9_TestNGFramework"></package>
+        </packages>
+    </test>
+</suite>
