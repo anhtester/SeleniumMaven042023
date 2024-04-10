@@ -12,7 +12,6 @@ public class BaseTest {
     public static WebDriver driver;
 
     public static void createBrowser(){
-        System.setProperty("webdriver.http.factory", "jdk-http-client");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -20,8 +19,6 @@ public class BaseTest {
     }
 
     public static void createBrowser(String browserName){
-        System.setProperty("webdriver.http.factory", "jdk-http-client");
-
         if(browserName.equals("chrome")){
             driver = new ChromeDriver();
         }
